@@ -1,0 +1,64 @@
+body {
+  margin: 0px;
+  padding-left: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: beige;
+    /* background-image: url("https://cdn-prd-strapi.debutify.com/t_Mvy_Qd3lw9yc_N3q_Xh_WQH_Afe_R2r1co9a3s_Xuasi_Un_57c27f47c1.jpg") ;
+    background-size: cover;
+    background-position: 'center';
+    background-repeat: 'no-repeat'; */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: 20px;
+}
+
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#AddtoCartButton {
+  margin-left: 20px;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#AddtoCartButton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#b1 {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  color: black;
+  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#b1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: #fff;
+}

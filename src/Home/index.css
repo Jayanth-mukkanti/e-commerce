@@ -1,0 +1,33 @@
+/* Add this to your index.css or create a new CSS file for styling */
+.home-container {
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+  
+  .image-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Set a maximum height if needed */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  #img-1{
+    margin: 0px auto;
+  }
+
+  #prod-stor-desc{
+    width: 80%;
+    margin: 20px auto;
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding-top: 25px;
+    border-radius: 15px;
+  }
