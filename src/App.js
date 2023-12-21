@@ -2,24 +2,21 @@ import React from 'react'
 import "./App.css";
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import ProductList from './ProductList/ProductList';
 import Card from './Card/Card';
 import Home from './Home/Home';
 import Cart from './Cart/Cart';
 import { BrowserRouter, Route, Routes, Link, Navigate } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-// import { addToCart } from './cartSlice';
+import { useSelector } from 'react-redux';
 
 function App() {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [searchItem, setSearchItem] = useState("");
 
-  // Get the cart items from the Redux store
   const cartItems = useSelector((state) => state.cart);
 
-  // Calculate the count of unique items in the cart
   const uniqueItemCount = React.useMemo(() => {
     return cartItems.length > 0 ? new Set(cartItems.map(item => item.id)).size : "";
   }, [cartItems]);

@@ -1,5 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./index.css";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 function Home() {
 
@@ -17,18 +23,6 @@ function Home() {
                 className="d-block w-50 rounded-5"
                 alt="..."
               />
-            </div>
-            <div style={{ height: "500px" }} class="carousel-item" data-bs-interval="2000">
-              <img id='img-1'
-                src="https://img.freepik.com/premium-photo/happy-asian-woman-using-cell-phone-yellow-background-colorful-shopping-concept_35721-361.jpg"
-                className="d-block w-50 rounded-5"
-                alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img id='img-1'
-                src="https://c8.alamy.com/comp/2D6B1X0/full-size-photo-of-big-full-family-enjoy-shopping-center-dad-daddy-mom-mommy-three-little-kids-buy-purchase-hold-bags-isolated-over-pastel-pink-color-2D6B1X0.jpg"
-                className="d-block w-50 h-25 rounded-5"
-                alt="..." />
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -48,23 +42,14 @@ function Home() {
           </h5>
         </div>
       </div>
-
-
-      <center id='login-form'>
-        {/* Your login form code here */}
-      </center>
+      <div class="col-12 col-md-12 bg bg-dark text-white text-center" style={{ fontSize: "25px" }}>
+        <h5 className='bg bg-dark text-white'> For More Details.... Contact us </h5>
+        <a href="https://www.instagram.com/" target="_blank"> <FontAwesomeIcon className='text-danger me-2' icon={faInstagram} size="1x" /></a>
+        <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon className='me-2' icon={faTwitter} size="0.5x"/></a>
+        <a href="https://www.linkedin.com/in/jayanth-royal-458bb2205/" target="_blank"> <FontAwesomeIcon icon={faLinkedin} size="0.5x" /></a>
+      </div>
     </>
   );
 }
 
 export default Home;
-
-// const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-// function renderButton() {
-//   if (isLoggedIn === true) {
-//     return <button className='mt-2' id='b1' onClick={() => { setIsLoggedIn(false) }}> Logout </button>;
-//   } else {
-//     return <button className='mt-2' id='b1' onClick={() => { setIsLoggedIn(true) }}> Login </button>;
-//   }
-// }

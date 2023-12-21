@@ -1,19 +1,12 @@
 import React from 'react'
-import { useNavigate } from 'react-router';
 import "./index.css"
-import { useDispatch } from 'react-redux';
-import { addToCart } from '../cartSlice';
 
-function Card({ productData, onAddToCart, isDisabled, uniqueItemCount }) {
-
-  const Navigate = useNavigate();
-  const dispatch = useDispatch();
+function Card({ productData, onAddToCart, isDisabled }) {
 
   const { title, image, price, rating } = productData;
 
   const handleAddToCart = () => {
-    onAddToCart(productData); // Use the onAddToCart function
-    // Navigate("/Cart");
+    onAddToCart(productData);
   };
 
   return (
@@ -36,7 +29,6 @@ function Card({ productData, onAddToCart, isDisabled, uniqueItemCount }) {
             {isDisabled ? 'In Cart' : 'Add to Cart'}
           </button>
         </div>
-
       </div>
     </>
   )
