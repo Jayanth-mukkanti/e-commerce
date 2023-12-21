@@ -42,12 +42,6 @@ function Home() {
           </h5>
         </div>
       </div>
-      <div class="col-12 col-md-12 bg bg-dark text-white text-center" style={{ fontSize: "25px" }}>
-        <h5 className='bg bg-dark text-white'> For More Details.... Contact us </h5>
-        <a href="https://www.instagram.com/" target="_blank"> <FontAwesomeIcon className='text-danger me-2' icon={faInstagram} size="1x" /></a>
-        <a href="https://twitter.com/" target="_blank"><FontAwesomeIcon className='me-2' icon={faTwitter} size="0.5x"/></a>
-        <a href="https://www.linkedin.com/in/jayanth-royal-458bb2205/" target="_blank"> <FontAwesomeIcon icon={faLinkedin} size="0.5x" /></a>
-      </div>
     </>
   );
 }
